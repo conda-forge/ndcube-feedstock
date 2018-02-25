@@ -1,6 +1,6 @@
 {% set name = "ndcube" %}
-{% set version = "0.1.dev273" %}
-{% set sha256 = "0dbb33ce21de604f0f9c78ea4ce8348f9e8b05855de58cbd8152ea6e68f9543b" %}
+{% set version = "1.0" %}
+{% set sha256 = "bb3b2a647e58b22bf456e1d0571f3609c89a5fa12568185183b3344efd86ebf1" %}
 
 package:
   name: {{ name|lower }}
@@ -15,6 +15,7 @@ build:
   number: 0
   script: python setup.py install --offline --no-git --single-version-externally-managed --record record.txt
   skip: True  # [py2k]
+  noarch: python
 
 requirements:
   build:
@@ -26,7 +27,7 @@ requirements:
     - python
     - astropy
     - matplotlib
-    - sunpy
+    - sunpy>=0.8
 
 test:
   imports:
@@ -38,9 +39,8 @@ test:
 
 about:
   home: http://sunpy.org
-  # License file will be included in source when https://github.com/sunpy/ndcube/pull/37 is merged
   license: BSD-2-Clause
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_file: 'LICENSE.rst'
   summary: 'A base package for multi-dimensional contiguious and non-contiguious spatially aware arrays.'
   license_family: BSD
   dev_url: https://github.com/sunpy/ndcube
