@@ -14,14 +14,15 @@ Summary: A base package for multi-dimensional contiguious and non-contiguious sp
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ndcube-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ndcube-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/ndcube-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ndcube-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ndcube-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ndcube-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/ndcube-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/ndcube-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ndcube/badges/version.svg)](https://anaconda.org/conda-forge/ndcube)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ndcube/badges/downloads.svg)](https://anaconda.org/conda-forge/ndcube)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ndcube-green.svg)](https://anaconda.org/conda-forge/ndcube) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ndcube.svg)](https://anaconda.org/conda-forge/ndcube) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ndcube.svg)](https://anaconda.org/conda-forge/ndcube) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ndcube.svg)](https://anaconda.org/conda-forge/ndcube) |
 
 Installing ndcube
 =================
