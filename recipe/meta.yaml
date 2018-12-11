@@ -1,6 +1,6 @@
 {% set name = "ndcube" %}
-{% set version = "1.0.1" %}
-{% set sha256 = "e055a564e48f603700798e86cfa14a94c0e21aacba9950f36ac6d4a3464df355" %}
+{% set version = "1.1" %}
+{% set sha256 = "df409acbbd6707e3e55aff896828e43133e44b41f64f69e63d053ecfb2fa8bf0" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: python setup.py install --offline --no-git --single-version-externally-managed --record record.txt
 
 requirements:
@@ -34,7 +34,6 @@ test:
     - ndcube.tests
     - ndcube.utils
     - ndcube.utils.tests
-    - ndcube.visualization
 
 about:
   home: http://sunpy.org
