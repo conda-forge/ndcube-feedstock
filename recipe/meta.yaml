@@ -34,7 +34,6 @@ test:
     - ndcube.tests
     - ndcube.utils
     - ndcube.utils.tests
-    - ndcube.visualization
 
 about:
   home: http://sunpy.org
