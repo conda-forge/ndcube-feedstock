@@ -26,7 +26,7 @@ requirements:
     - python>3
     - astropy
     - matplotlib
-    - sunpy >=0.8
+    - sunpy >=0.9
 
 test:
   imports:
