@@ -1,6 +1,6 @@
 {% set name = "ndcube" %}
-{% set version = "1.1" %}
-{% set sha256 = "df409acbbd6707e3e55aff896828e43133e44b41f64f69e63d053ecfb2fa8bf0" %}
+{% set version = "1.1.1" %}
+{% set sha256 = "194ea9c9d9353c032493d1e228ac435fc478119380af514f28d866105fcab451" %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,7 @@ requirements:
     - python>3
     - astropy
     - matplotlib
-    - sunpy >=0.8
+    - sunpy >=0.9
 
 test:
   imports:
