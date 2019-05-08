@@ -1,6 +1,6 @@
 {% set name = "ndcube" %}
-{% set version = "1.1.1" %}
-{% set sha256 = "194ea9c9d9353c032493d1e228ac435fc478119380af514f28d866105fcab451" %}
+{% set version = "1.1.2" %}
+{% set sha256 = "8e27f9feb245239d10ba91efae29985d439c2d440c60d221117d2de74a48c391" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python setup.py install --offline --no-git --single-version-externally-managed --record record.txt
 
 requirements:
