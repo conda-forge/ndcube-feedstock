@@ -18,22 +18,28 @@ build:
 
 requirements:
   build:
-    - python>3
+    - python >3
     - setuptools
-    - astropy
 
   run:
-    - python>3
-    - astropy<3.1
+    - python >3
+    - astropy
     - matplotlib
-    - sunpy ==0.9
+    - sunpy <=1.0.3
 
 test:
+
+  requires:
+    - pytest-astropy
+    
   imports:
     - ndcube
     - ndcube.tests
     - ndcube.utils
     - ndcube.utils.tests
+    
+   commands:
+    - pytest --pyargs ndcube
 
 about:
   home: http://sunpy.org
