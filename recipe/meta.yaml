@@ -25,10 +25,9 @@ requirements:
     - python >3
     - astropy
     - matplotlib
-    - sunpy =<1.0.3
+    - sunpy <=1.0.3
 
 test:
-
   requires:
     - pytest-astropy
     
@@ -38,7 +37,7 @@ test:
     - ndcube.utils
     - ndcube.utils.tests
     
-   commands:
+  commands:
     - pytest --pyargs ndcube
 
 about:
