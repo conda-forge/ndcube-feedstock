@@ -31,21 +31,21 @@ requirements:
 test:
   requires:
     - pytest-astropy
-    
+
   imports:
     - ndcube
     - ndcube.tests
     - ndcube.utils
     - ndcube.utils.tests
-    
+
   commands:
     - pytest --pyargs ndcube
 
 about:
   home: http://sunpy.org
   license: BSD-2-Clause
-  license_file: 'LICENSE.rst'
-  summary: 'A base package for multi-dimensional contiguious and non-contiguious spatially aware arrays.'
+  license_file: LICENSE.rst
+  summary: A base package for multi-dimensional contiguious and non-contiguious spatially aware arrays.
   license_family: BSD
   dev_url: https://github.com/sunpy/ndcube
 
