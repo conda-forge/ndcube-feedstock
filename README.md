@@ -5,7 +5,7 @@ Home: http://sunpy.org
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A base package for multi-dimensional contiguious and non-contiguious spatially aware arrays.
 
