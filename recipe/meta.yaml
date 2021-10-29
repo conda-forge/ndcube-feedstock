@@ -29,13 +29,13 @@ requirements:
     - gwcs >=0.15
     - matplotlib-base >=3.1
     - mpl_animators >=1.0
-    - reproject >=0.7.1
 
 test:
   requires:
     - pytest-astropy
     - pytest-mpl
     - sunpy
+    - reproject >=0.7.1
 
   imports:
     - ndcube
