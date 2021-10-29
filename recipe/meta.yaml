@@ -1,6 +1,6 @@
 {% set name = "ndcube" %}
-{% set version = "1.4.2" %}
-{% set sha256 = "a51fced75d620601d6a850a7f77844cceaabf80a728939580d9fd6df41370355" %}
+{% set version = "2.0.0rc3" %}
+{% set sha256 = "6da04337738f1e522f7b36590c1601a34d3bf935632d2cac1b2dc72bb10cbcdd" %}
 
 package:
   name: {{ name|lower }}
@@ -12,25 +12,27 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
   number: 0
-  script: python setup.py install --offline --no-git --single-version-externally-managed --record record.txt
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: true  # [py<37]
 
 requirements:
   build:
-    - python >=3.6
+    - python >=3.7
     - setuptools
     - setuptools_scm
 
   run:
-    - python >=3.6
-    - astropy >=3.1
-    - matplotlib-base >=2
-    - sunpy >=1.0.3
+    - python >=3.7
+    - astropy >=4.1
+    - gwcs >=0.15
+    - matplotlib-base >=3.1
+    - mpl_animators >=1.0
 
 test:
   requires:
     - pytest-astropy
+    - pytest-mpl
 
   imports:
     - ndcube
@@ -51,6 +53,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - SolarDrew
     - Cadair
     - DanRyanIrish
