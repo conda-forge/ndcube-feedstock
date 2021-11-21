@@ -1,6 +1,6 @@
 {% set name = "ndcube" %}
-{% set version = "2.0.0" %}
-{% set sha256 = "8011482c99647d3d7c89e3e5347b3476db3507e441d5f272d94815e53b7a38d2" %}
+{% set version = "2.0.1" %}
+{% set sha256 = "ee6858c626d02c99374a1d3e70d8def1f2b4b0b15dee11f0b7024b0707ea1a9d" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   noarch: python
 
 requirements:
-  build:
+  host:
     - python >=3.7
     - pip
     - setuptools
@@ -25,15 +25,16 @@ requirements:
 
   run:
     - python >=3.7
-    - astropy >=4.1
+    - astropy >=4.2
     - gwcs >=0.15
-    - matplotlib-base >=3.1
+    - matplotlib-base >=3.2
     - mpl_animators >=1.0
+    - numpy >1.17
 
 test:
   requires:
     - pytest-astropy
-    - pytest-mpl
+    - pytest-mpl >=0.12
     - sunpy
     - reproject >=0.7.1
 
