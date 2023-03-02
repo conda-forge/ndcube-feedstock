@@ -18,13 +18,13 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - setuptools
     - setuptools_scm
 
   run:
-    - python >=3.7
+    - python >=3.8
     - astropy >=4.2
     - gwcs >=0.15
     - matplotlib-base >=3.2
@@ -33,13 +33,18 @@ requirements:
 
 test:
   requires:
+    - dask
+    - pytest
     - pytest-astropy
     - pytest-mpl >=0.12
-    - sunpy
+    - scipy
+    - sunpy>=4.0.0
     - reproject >=0.7.1
 
   imports:
     - ndcube
+    - ndcube.extra_coords
+    - ndcube.extra_coords.tests
     - ndcube.tests
     - ndcube.utils
     - ndcube.utils.tests
