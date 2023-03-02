@@ -1,11 +1,11 @@
-About ndcube
-============
+About ndcube-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ndcube-feedstock/blob/main/LICENSE.txt)
 
 Home: http://sunpy.org
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ndcube-feedstock/blob/main/LICENSE.txt)
 
 Summary: A base package for multi-dimensional contiguious and non-contiguious spatially aware arrays.
 
