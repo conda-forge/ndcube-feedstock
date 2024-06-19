@@ -24,22 +24,23 @@ requirements:
     - setuptools_scm
 
   run:
-    - python >=3.8
-    - astropy >=4.2
-    - gwcs >=0.15
-    - matplotlib-base >=3.2
+    - python >=3.10
+    - astropy >=5.0
+    - gwcs >=0.18
+    - matplotlib-base >=3.5.0
     - mpl_animators >=1.0
-    - numpy >1.17
+    - numpy >1.23
 
 test:
   requires:
-    - dask
-    - pytest
-    - pytest-astropy
+    - dask >=2022.5.2
+    - pytest >=7.1.0
+    - pytest-astropy >=0.11.0
     - pytest-mpl >=0.12
-    - scipy
-    - sunpy>=4.0.0
+    - scipy >=1.8.0
+    - sunpy>=5.0.0
     - reproject >=0.7.1
+    - specutils >=1.7.0
 
   imports:
     - ndcube
