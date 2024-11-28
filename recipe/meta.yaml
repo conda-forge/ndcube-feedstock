@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -18,13 +18,13 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools_scm
 
   run:
-    - python >=3.10
+    - python >={{ python_min}}
     - astropy-base >=5.0
     - gwcs >=0.18
     - matplotlib-base >=3.5.0
@@ -33,6 +33,7 @@ requirements:
 
 test:
   requires:
+    - python {{ python_min }}
     - dask >=2022.5.2
     - pytest >=7.1.0
     - pytest-astropy >=0.11.0
