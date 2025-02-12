@@ -1,6 +1,6 @@
 {% set name = "ndcube" %}
-{% set version = "2.3.0" %}
-{% set sha256 = "309d938c068e090b3b1ad207fd1940ff2c7a469b5079e4790b24d987c62beadf" %}
+{% set version = "2.3.1" %}
+{% set sha256 = "5bcf727180dce08d2198026d6b6b630fedab54f75b408d3268b54b336830c241" %}
 
 package:
   name: {{ name|lower }}
