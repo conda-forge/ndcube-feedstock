@@ -1,6 +1,7 @@
 {% set name = "ndcube" %}
-{% set version = "2.3.3" %}
-{% set sha256 = "5696790c7b92c20b61270a9f4d18925a02bc7440158432940c150abb54a322ea" %}
+
+{% set version = "2.3.4" %}
+{% set sha256 = "c189e727de4eae038d1d21b90b88ec314e6cc9e8d83d6f47e0cfe8dd03049e5b" %}
 
 package:
   name: {{ name|lower }}
@@ -39,7 +40,7 @@ test:
     - pytest-astropy >=0.11.0
     - pytest-mpl >=0.12
     - scipy >=1.8.0
-    - sunpy>=5.0.0
+    - sunpy >=5.0.0
     - reproject >=0.7.1
     - specutils >=1.7.0
 
