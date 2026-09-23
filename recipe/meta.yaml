@@ -1,7 +1,7 @@
 {% set name = "ndcube" %}
 
-{% set version = "2.4.1" %}
-{% set sha256 = "6afd2ab15cc867ff636207f882ef48595c737969ff2c0b688c6de7e62ed31a5b" %}
+{% set version = "2.4.2" %}
+{% set sha256 = "a940b8628b93117c5321894117895b7b74f2f62f8ff22a2767db1fc4c4178240" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
